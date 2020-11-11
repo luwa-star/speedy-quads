@@ -11,6 +11,8 @@
     <!-- font awesome-->
     <script src="./js/all.js"></script>
     <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;1,200&display=swap" rel="stylesheet">
     <!-- main CSS-->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -34,15 +36,24 @@
                 <i class="fab fa-3x fa-ubuntu"></i> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarlinks" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse text-white" id="navbarlinks">
+        </button>
+            <div class="collapse navbar-collapse text-dark" id="navbarlinks">
                 <div class="navbar-nav text-uppercase font-weight-bold">
-                    <a class="nav-link active ml-2" href="#home">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link ml-4" href="#about">About</a>
-                    <a class="nav-link ml-4" href="#blog">Blog</a>
-                    <a class="nav-link ml-4" href="#sales">Sales</a>
-                    <a class="nav-link ml-4" href="#contact">Contact</a>
-                    <a class="nav-link nav-link-cart" href="#cart" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+                    <a class="nav-link active ml-md-2" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link ml-md-4" href="#about">About</a>
+                    <a class="nav-link ml-md-4" href="#blog">Blog</a>
+                    <a class="nav-link ml-md-4" href="#sales">Sales</a>
+                    <a class="nav-link ml-md-4" href="#contact">Contact</a>
+                    <a class="nav-link nav-link-cart mr-md-0" href="#cart" target="_blank"><span class="d-md-none pr-5">
+                        <p>cart</p>
+                    </span><i class="fas fa-shopping-cart"></i></a>
+                    <div class="sub-nav d-md-none">
+                        <span class="social-link"></span><a href="#"><i class="fab fa-2x  fa-facebook-f text-white mr-3"></i></a></span>
+                        <span class="social-link"><a href="#"><i class="fab fa-2x fa-instagram-square text-white mr-3"></i></a></span>
+                        <span class="social-link"><a href="#"><i class="fab fa-2x fa-amazon text-white mr-3"></i></a></span>
+
+                    </div>
+
 
                 </div>
             </div>
@@ -50,15 +61,15 @@
 
 
         <div class="row">
-            <div class="col-lg-6 speedy-quad-section">
-                <img class="speedy-img" src="./img/skates-copy.png" alt="">
+            <div class="col-lg-7 speedy-quad-section">
+                <img class="speedy-img" src="./img/skates-copy.png" alt="speedy">
 
                 <div class="speedy-heading">
                     <p class="heading text-uppercase">speedy</p>
                     <p class="heading-2 text-uppercase">quads</p>
                 </div>
             </div>
-            <div class="col-lg-6 content-section px-lg-3 px-md-2 py-2">
+            <div class="col-lg-5 content-section px-lg-3 px-md-2">
                 <!--title-->
                 <h1 class="content-heading text-uppercase"> POSEIDON SPEEDY QUADS
                     <span class="star">
@@ -71,7 +82,7 @@
                     </span></h1>
                 <p class="content-sub-heading text-capitalize text-muted"> Contact 0134-345-789 </p>
                 <h2 class="price">3500 py6.</h2>
-                <div class="content pr-5">
+                <div class="content">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel modi recusandae nisi similique adipisci nihil obcaecati sunt sapiente amet dicta qui vero maxime tempora reprehenderit nesciunt earum, officia nam! Non deleniti impedit dignissimos rem voluptates
                     quidem, ipsum nam nulla hic. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse enim inventore soluta porro iusto commodi?
                     <h3 class="content-link"><a href="#" class="content-link text-muted text-capitalize">speciale</a></h3>
@@ -117,11 +128,12 @@
 
                     </form>
                 </div>
-                <button type="button" class="btn btn-lg btn-content text-white my-5">Submit</button>
+                <button type="button" class="btn btn-lg btn-content text-white my-3">Submit</button>
             </div>
 
         </div>
     </div>
+
 
 
 

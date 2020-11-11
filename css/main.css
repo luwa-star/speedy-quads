@@ -1,233 +1,331 @@
-    @font-face {
-        src: url(fonts/PlayfairDisplay-Bold.ttf);
-        font-family: playfair;
-    }
-    
-    @font-face {
-        src: url(fonts/PlayfairDisplay-ExtraBold.ttf);
-        font-family: playfair;
-    }
-    
-    @font-face {
-        src: url(fonts/PlayfairDisplay-Medium.ttf);
-        font-family: playfair;
-    }
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        /*background-image: linear-gradient(90deg, #0283aa, #12bef3ef);*/
-        background-color: #0392BF;
-        color: #fff;
-        font-size: 16px;
-        font-family: playfair;
-    }
-    /*sidebar*/
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0392BF;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(250, 250, 250, 0.8);
+}
+
+.sidebar-icon-wrapper {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.sidebar-icons {
+    height: 50px;
+}
+
+
+/*NAVBAR*/
+
+.navbar {
+    width: 100vw;
+    margin-right: 0;
+    padding-left: 0.3rem;
+}
+
+.fa-ubuntu {
+    color: #ED48BA;
+    opacity: 0.8;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.navbar-nav {
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.nav-link-cart {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-toggler {
+    background-color: rgba(250, 250, 250, 0.8);
+    transition: 0.5s ease-in;
+    margin-right: 1.2rem;
+}
+
+.navbar-toggler:active {
+    border: none!important;
+}
+
+.navbar-toggler:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.sub-nav {
+    height: 40px;
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/* Speedy Quads Img section*/
+
+.speedy-img {
+    width: 280px;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    left: 30%;
+}
+
+.speedy-heading {
+    margin: 20rem 6rem 3rem;
+    line-height: 1.0;
+}
+
+.heading,
+.heading-2 {
+    font-size: 48px;
+    padding-left: 5rem;
+    color: rgba(250, 250, 250, 0.8);
+}
+
+.heading-2 {
+    padding-left: 10rem;
+}
+
+
+/*Content section---- mobile*/
+
+.col-lg-5 {
+    text-align: center!important;
+    padding: 2rem!important;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.star img {
+    width: 15px;
+}
+
+span {
+    margin-left: 0.5rem;
+}
+
+.star {
+    text-align: center;
+    display: block;
+}
+
+.content-sub-heading,
+.price,
+.color-heading,
+.shoe-size-dropdown {
+    text-align: left;
+}
+
+.content {
+    text-align: left;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+
+.content-link a {
+    text-decoration: underline;
+}
+
+.color-palette {
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-1 {
+    background-color: #12bef3ef;
+}
+
+.btn-2 {
+    background-color: #ED48BA;
+}
+
+.btn-3 {
+    background-color: #FBEC06;
+}
+
+.btn-4 {
+    background-color: #B3D4E0;
+}
+
+.color-palette:visited,
+.color-palette:hover,
+.color-palette:active {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+select {
+    width: 100px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+select:visited,
+select:hover,
+select:active {
+    background: #fff!important;
+    color: #6c757d!important;
+}
+
+.btn-content {
+    background-color: #ED48BA;
+    width: 150px;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.btn-content:visited,
+.btn-content:hover,
+.btn-content:active {
+    border: 2px solid #fff;
+    opacity: 0.8;
+}
+
+
+/*media queries*/
+
+@media only screen and (max-width: 1024px) {
     .sidebar {
-        width: 100px;
-        height: 150vh;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: rgba(250, 250, 250, 0.8);
+        display: none;
     }
-    
-    .sidebar-icon-wrapper {
-        flex-direction: column;
-        justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-link-cart {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
         align-items: center;
-        height: 100%;
     }
-    
-    .sidebar-icons {
-        height: 50px;
+}
+
+@media only screen and (min-width: 601px) {
+    .col-lg-5 {
+        padding: 5rem 6rem!important;
     }
-    /*NAVBAR*/
-    
-    .navbar {
-        width: 100vw;
-        height: 15%;
-        margin-right: 0;
-        padding-left: 0.3rem;
+    .star {
+        display: inline;
     }
-    
-    .fa-ubuntu {
-        color: #ED48BA;
-        opacity: 0.8;
-    }
-    
-    .navbar-light .navbar-nav .nav-link {
-        color: #fff;
-        font-size: 18px;
-        font-weight: lighter;
-    }
-    
-    .navbar-nav {
-        margin-left: 2rem;
-        width: 100%;
-    }
-    
     .nav-link-cart {
         width: 50%;
         display: flex;
         justify-content: flex-end;
         align-items: center;
     }
-    /* Speedy Quads Img section*/
-    
+}
+
+@media only screen and (min-width:1024px) {
+    .navbar-nav {
+        margin: 0.5rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    .mb-5 {
+        margin-bottom: 4rem!important;
+    }
     .speedy-img {
-        width: 350px;
-        height: 600px;
+        width: 280px;
+        height: 400px;
         position: absolute;
         z-index: -1;
-        left: 25%;
+        left: 30%;
     }
-    
     .speedy-heading {
-        margin: 28rem 4rem 3rem;
+        margin: 22rem 6rem 3rem;
         line-height: 1.0;
     }
-    
     .heading,
     .heading-2 {
         font-size: 48px;
         padding-left: 5rem;
         color: rgba(250, 250, 250, 0.8);
     }
-    
     .heading-2 {
         padding-left: 10rem;
     }
-    /*Content section*/
-    
-    h1 {
-        font-size: 2rem;
+    .col-lg-5 {
+        text-align: left!important;
+        padding: 1rem!important;
     }
-    
-    h2 {
-        font-size: 1.8rem;
+    .star {
+        display: inline;
     }
-    
-    h3 {
-        font-size: 1.3rem;
-    }
-    
-    .star img {
-        width: 22px;
-    }
-    
-    span {
-        margin-left: 1.2rem;
-    }
-    
     .content {
-        padding-right: 6rem!important;
+        padding-right: 8rem!important;
         padding-top: 1rem;
         line-height: 1.5;
     }
-    
-    .content-link a {
-        text-decoration: underline;
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 1.8rem;
     }
-    
-    .color-palette {
-        border: 2px solid #fff;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        transition: 0.5s ease-in-out;
+    h2 {
+        font-size: 1.5rem;
     }
-    
-    .btn-1 {
-        background-color: #12bef3ef;
+    h3 {
+        font-size: 1.3rem;
     }
-    
-    .btn-2 {
-        background-color: #ED48BA;
+    .mb-5 {
+        margin-bottom: 16rem!important;
     }
-    
-    .btn-3 {
-        background-color: #FBEC06;
-    }
-    
-    .btn-4 {
-        background-color: #B3D4E0;
-    }
-    
-    .color-palette:visited,
-    .color-palette:hover,
-    .color-palette:active {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        opacity: 0.8;
-    }
-    
-    select {
-        width: 100px;
-        border: 2px solid #fff;
-        cursor: pointer;
-    }
-    
-    select:visited,
-    select:hover,
-    select:active {
-        background: #fff!important;
-        color: #6c757d!important;
-    }
-    
-    .btn-content {
-        background-color: #ED48BA;
-        width: 150px;
-        border: none;
-        border-radius: 0;
-        font-size: 20px;
-        transition: 0.5s ease-in-out;
-    }
-    
-    .btn-content:visited,
-    .btn-content:hover,
-    .btn-content:active {
-        border: 2px solid #fff;
-        opacity: 0.8;
-    }
-    /*media queries*/
-    
-    @media only screen and (max-width: 992px) {
-        .sidebar {
-            display: none;
-        }
-        /*fix navbar for this screensize*/
-    }
-    
-    @media only screen and (min-width: 992px) {
-        h1 {
-            font-size: 1.5rem;
-        }
-        h2 {
-            font-size-adjust: 1.2rem;
-        }
-        .mb-5 {
-            margin-bottom: 4rem!important;
-        }
-    }
-    
-    @media only screen and (min-width: 1200px) {
-        h1 {
-            font-size: 2rem;
-        }
-        h2 {
-            font-size: 1.8rem;
-        }
-        h3 {
-            font-size: 1.3rem;
-        }
-        .mb-5 {
-            margin-bottom: 16rem!important;
-        }
-    }
+}

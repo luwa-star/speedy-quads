@@ -8,5 +8,5 @@ GREY:#B3D4E0
 PINK:#ED48BA
 YELLOW:#FBEC06
 # Javascript
--make the bg-img toggle onclick
+-make the bg-img toggle onclick//later add-on
 
